@@ -22,4 +22,14 @@ class ExpressionParserTests: XCTestCase {
         var formulaFromText = ExpressionParser.parse(from: input)
         XCTAssertEqual(try? formulaFromText.result(), try? formula.result())
     }
+    
+    func test_parse_음수_변환() {
+        let operands: [Double] = [-1, -3]
+        let operators = ["+"].compactMap { Operator(rawValue: $0) }
+        var formula = Formula(operands: operands,
+                              operators: operators)
+        let input = "-1+-3"
+        var formulaFromText = ExpressionParser.parse(from: input)
+        XCTAssertEqual(try? formulaFromText.result(), try? formula.result())
+    }
 }
