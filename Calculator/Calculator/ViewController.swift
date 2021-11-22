@@ -18,11 +18,39 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var newNumberLabel: UILabel!
     @IBOutlet weak var newOperatorLabel: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         newNumberLabel.text = "0"
         newOperatorLabel.text = ""
+        stackView.arrangedSubviews.forEach {
+            stackView.removeArrangedSubview($0)
+        }
+    }
+    
+    private func creatEntryView() -> UIView {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.alignment = .center
+        stack.distribution = .fill
+        stack.spacing = 8
+        
+        let endRecordIndex = calculationRecord.endIndex
+        let operatorLabel = UILabel()
+        operatorLabel.text = calculationRecord[endRecordIndex - 2]
+        operatorLabel.font = UIFont.preferredFont(forTextStyle: .title3)
+        operatorLabel.textColor = UIColor.white
+        let numberLabel = UILabel()
+        numberLabel.text = calculationRecord[endRecordIndex - 1]
+        numberLabel.font = UIFont.preferredFont(forTextStyle: .title3)
+        numberLabel.textColor = UIColor.white
+                                                
+        stack.addArrangedSubview(operatorLabel)
+        stack.addArrangedSubview(numberLabel)
+        
+        return stack
     }
     
     func addCalculationRecord() {
@@ -38,6 +66,11 @@ class ViewController: UIViewController {
         newNumber.removeAll()
         newNumberLabel.text = "0"
         newOperatorLabel.text = ""
+        
+        let recordView = creatEntryView()
+        stackView.addArrangedSubview(recordView)
+        
+        // TODO: scroll
     }
     
     func clearEntry() {

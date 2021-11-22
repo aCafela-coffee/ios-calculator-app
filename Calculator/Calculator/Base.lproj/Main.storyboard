@@ -18,39 +18,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOT-7g-vxv">
-                                <rect key="frame" x="16" y="240.5" width="382" height="45"/>
+                                <rect key="frame" x="16" y="285.5" width="382" height="0.0"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XRe-QE-UJf">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="0.0"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Pu-Ld-ZGi">
-                                                <rect key="frame" x="267" y="0.0" width="115" height="20.5"/>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Pu-Ld-ZGi">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="0.0"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7v-6K-W40">
-                                                        <rect key="frame" x="0.0" y="0.0" width="8" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="8" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGo-LN-bKL">
-                                                        <rect key="frame" x="16" y="0.0" width="99" height="20.5"/>
+                                                        <rect key="frame" x="16" y="0.0" width="99" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6I9-iL-eIa">
-                                                <rect key="frame" x="267" y="24.5" width="115" height="20.5"/>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6I9-iL-eIa">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="0.0"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alw-Zd-2pT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="8" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="8" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hcb-r0-27f">
-                                                        <rect key="frame" x="16" y="0.0" width="99" height="20.5"/>
+                                                        <rect key="frame" x="16" y="0.0" width="99" height="0.0"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -63,10 +63,10 @@
                                 <constraints>
                                     <constraint firstItem="XRe-QE-UJf" firstAttribute="height" secondItem="BOT-7g-vxv" secondAttribute="height" priority="100" id="82c-Ko-nh3"/>
                                     <constraint firstItem="XRe-QE-UJf" firstAttribute="width" secondItem="BOT-7g-vxv" secondAttribute="width" id="9hO-gT-uzB"/>
-                                    <constraint firstItem="XRe-QE-UJf" firstAttribute="height" secondItem="gA2-7M-FxF" secondAttribute="height" priority="1" id="PfX-qG-S4s"/>
                                     <constraint firstItem="XRe-QE-UJf" firstAttribute="leading" secondItem="K6N-nC-kaV" secondAttribute="leading" id="WTo-5t-Xde"/>
                                     <constraint firstItem="XRe-QE-UJf" firstAttribute="trailing" secondItem="K6N-nC-kaV" secondAttribute="trailing" id="bYc-Yd-kw9"/>
                                     <constraint firstItem="XRe-QE-UJf" firstAttribute="bottom" secondItem="K6N-nC-kaV" secondAttribute="bottom" id="dlN-3y-jhh"/>
+                                    <constraint firstItem="gA2-7M-FxF" firstAttribute="width" secondItem="XRe-QE-UJf" secondAttribute="width" id="gCq-dR-3AD"/>
                                     <constraint firstItem="XRe-QE-UJf" firstAttribute="top" secondItem="K6N-nC-kaV" secondAttribute="top" id="hlo-zV-yFo"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="K6N-nC-kaV"/>
@@ -349,7 +349,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DC3-Ia-6L7" secondAttribute="trailing" constant="16" id="4U4-wj-pOs"/>
-                            <constraint firstItem="BOT-7g-vxv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9Pe-KB-bQo"/>
+                            <constraint firstItem="BOT-7g-vxv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Pe-KB-bQo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YKH-82-hZC" secondAttribute="trailing" constant="16" id="YWo-lu-Avi"/>
                             <constraint firstItem="YKH-82-hZC" firstAttribute="top" secondItem="DC3-Ia-6L7" secondAttribute="bottom" constant="20" id="f7E-le-Da8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOT-7g-vxv" secondAttribute="trailing" constant="16" id="jGA-4U-1bz"/>
@@ -363,6 +363,8 @@
                     <connections>
                         <outlet property="newNumberLabel" destination="Lwz-OF-XHD" id="bQa-nb-5ud"/>
                         <outlet property="newOperatorLabel" destination="HPC-iy-qdm" id="zVB-fK-qpa"/>
+                        <outlet property="scrollView" destination="BOT-7g-vxv" id="GAL-8p-qEX"/>
+                        <outlet property="stackView" destination="XRe-QE-UJf" id="n7l-hQ-irM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
